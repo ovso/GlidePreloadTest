@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      tools:context=".MainActivity"
+      >
+    <ImageView
+        android:id="@+id/imageview_main_one"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars[4]"
+        />
+    <ImageView
+        android:id="@+id/imageview_main_two"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars[4]"
+        />
+  </LinearLayout>
+  <Button
+      android:id="@+id/btn_main_clear_cache"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left|bottom"
+      android:text="캐시 클리어"
+      tools:ignore="HardcodedText,RtlHardcoded"
+      />
+  <Button
+      android:id="@+id/btn_main_load_img"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|bottom"
+      android:text="이미지 로드"
+      tools:ignore="HardcodedText,RtlHardcoded"
+      />
+
+  <Button
+      android:id="@+id/btn_main_preload"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal|bottom"
+      android:text="미리 로드"
+      tools:ignore="HardcodedText,RtlHardcoded"
+      />
+
+</FrameLayout>
