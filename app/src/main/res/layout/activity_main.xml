@@ -8,14 +8,15 @@
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:orientation="horizontal"
+      android:divider="@android:color/white"
+      android:orientation="vertical"
+      android:showDividers="middle"
       tools:context=".MainActivity"
       >
     <ImageView
         android:id="@+id/imageview_main_one"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="fitXY"
         tools:ignore="ContentDescription"
@@ -23,8 +24,26 @@
         />
     <ImageView
         android:id="@+id/imageview_main_two"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars[4]"
+        />
+    <ImageView
+        android:id="@+id/imageview_main_three"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@tools:sample/avatars[4]"
+        />
+    <ImageView
+        android:id="@+id/imageview_main_four"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:scaleType="fitXY"
         tools:ignore="ContentDescription"
